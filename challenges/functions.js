@@ -39,8 +39,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
-
+// Explanation: When a function is nested within another function, the inner function `nestedfunction()` can access the arguments and variables from the outer function it is nested within. A nested function is a closure where the inner (nested) function contains the scope of the outer function.
 
 const external = "I'm outside the function";
 
