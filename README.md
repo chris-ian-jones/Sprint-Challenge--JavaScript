@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+`.forEach` is used when you want to iterate over each item in an array and do something with each item according to further code/logic you write. `.map` iterates over each item in an array, but returns another array of the same size with items transformed according to the further code/logic you write. The biggest difference is `.map` RETURNS a new array which has the expected output.
+
 2. What is the difference between a function and a method?
+
+A fuction is defined outside of an object, whereas a method is defined as the property of an object.
 
 3. What is closure?
 
+A closure is a inner function, that has access to the outer (enclosing) function’s variables—scope chain. When a function is declared, it contains a function definition and a closure - the closure can be thought of as the collection of all the variables in scope at the time of creation of the function.
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1: Window/Global Object Binding: when in the global scope, the value of the 'this' keyword will be the window/console Object.
+Rule 2: Implicit Binding: When a function with a preceding dot is called, the object before that dot is 'this'.
+Rule 3: New Binding: When a function is used as a constructor, its 'this' is bound to the new object being constructed.
+Rule 4: Explicit Binding: 'this' is explicitly defined whenever the 'call' or 'apply' methods are used.
+
 5. Why do we need super() in an extended class?
+
+`super()` came about in addition to the new `class` syntax in ES6. We can `extend` a class in relation to the concept of inheritance, and use the super() keyword as a function which calls the parent class while passing through parameters. The super keyword is also used to call the methods of the parent class explicitly.
 
 ## Project Set up
 
